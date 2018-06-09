@@ -1,6 +1,6 @@
 {
-  "short_name": "Elm App",
-  "name": "Create Elm App Sample",
+  "short_name": "Cervejapp",
+  "name": "Cervejapp - quanto por pessoa?",
   "icons": [
     {
       "src": "favicon.ico",
