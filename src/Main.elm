@@ -64,7 +64,7 @@ criaCampo nome legenda evento =
     div []
         [ label [ for nome ] [ text legenda ]
         , input
-            [ type_ "num"
+            [ type_ "number"
             , id nome
             , onInput evento
             , size 4
