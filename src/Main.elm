@@ -21,8 +21,8 @@ init : ( Model, Cmd Msg )
 init =
     ( { umaCerveja = 0
       , quantasCervejas = 0
-      , quantosPorcento = 10
-      , quantasPessoas = 1
+      , quantosPorcento = 0
+      , quantasPessoas = 0
       }
     , Cmd.none
     )

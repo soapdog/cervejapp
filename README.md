@@ -1,3 +1,13 @@
+# Cervejapp
+
+Um app para te ajudar a dividir o preço da cerveja com os amigos no barzinho.
+
+Versão online em: https://soapdog.github.io/cervejapp/
+
+Image Credit: <a href="https://vector.me/browse/429549/beer_mug" title="Beer Mug" target="_blank">Beer Mug</a> from <a href="https://vector.me" title="Vector.me" target="_blank">Vector.me</a> (by nicubunu)
+
+
+# Readme About The `Create Elm App` project
 This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
 
 Below you will find some information on how to perform basic tasks.
