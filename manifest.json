@@ -3,9 +3,9 @@
   "name": "Cervejapp - quanto por pessoa?",
   "icons": [
     {
-      "src": "logo.svg",
-      "sizes": "115x125",
-      "type": "image/svg+xml"
+      "src": "logo.png",
+      "sizes": "120x120",
+      "type": "image/png"
     }
   ],
   "start_url": "./index.html",
