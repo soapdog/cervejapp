@@ -21,8 +21,8 @@ init : ( Model, Cmd Msg )
 init =
     ( { umaCerveja = 0
       , quantasCervejas = 0
-      , quantosPorcento = 0
-      , quantasPessoas = 0
+      , quantosPorcento = 10
+      , quantasPessoas = 1
       }
     , Cmd.none
     )
@@ -59,14 +59,15 @@ update msg model =
 ---- VIEW ----
 
 
-criaCampo : String -> String -> (String -> Msg) -> Html Msg
-criaCampo nome legenda evento =
+criaCampo : String -> String -> Float -> (String -> Msg) -> Html Msg
+criaCampo nome legenda inicial evento =
     div []
         [ label [ for nome ] [ text legenda ]
         , input
             [ type_ "number"
             , id nome
             , onInput evento
+            , value <| toString inicial
             , size 4
             ]
             []
@@ -93,10 +94,10 @@ view model =
             ]
         ]
         [ h1 [] [ text "🍺 Cervejapp 🍺" ]
-        , criaCampo "umaCerveja" "💲🍺 x " MudaPrecoDaCerveja
-        , criaCampo "quantasCervejas" "🍻\x1F914 x " MudaQuantasCervejas
-        , criaCampo "quantasPessoas" "👥🍺x " MudaQuantasPessoas
-        , criaCampo "quantasCervejas" "\x1F935\x1F911 x " MudaPorcentagem
+        , criaCampo "umaCerveja" "💲🍺 x " model.umaCerveja MudaPrecoDaCerveja
+        , criaCampo "quantasCervejas" "🍻\x1F914 x " model.quantasCervejas MudaQuantasCervejas
+        , criaCampo "quantasPessoas" "👥🍺x " model.quantasPessoas MudaQuantasPessoas
+        , criaCampo "quantasCervejas" "\x1F935\x1F911 x " model.quantosPorcento MudaPorcentagem
         , h3 [] [ text ("💸😿 = R$ " ++ custoPorPessoa) ]
         ]
 
